@@ -180,11 +180,7 @@ display: flex;
   padding: 188px 0;
   text-align: center;
   background-color: #2E2F42;
-  background-image: linear-gradient(
-    rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)), 
-    url(../images/hero/people-office\ 1\ \(1\).jpg);
-    
+     
 }  
 
 .overlay {
@@ -194,8 +190,12 @@ display: flex;
   margin-right: auto;
   background-size: cover;
   background-color: #2E2F42; 
+  background-image: linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)), 
+    url(../images/hero/people-office\ 1\ \(1\).jpg);
   background-repeat: no-repeat;
-  background-position: center;  
+  background-position: center;   
 }
 
 .main-title { 
@@ -580,28 +580,27 @@ margin-bottom: 72px;
 
 .portfolio-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
   column-gap: 24px;
   row-gap: 48px;
 }
 
 .portfolio-list-box { 
-  display: block; 
   width: calc((100% - 48px) / 3);
   margin-right: 0;
   margin-bottom: 0;
 }  
 
-.portfolio-list-box:hover,
-.portfolio-list-box:focus {
+.portfolio-card:hover,
+.portfolio-card:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
    0px 1px 1px rgba(46, 47, 66, 0.16),
    0px 2px 1px rgba(46, 47, 66, 0.08);  
 }
 
   .portfolio-card {
-  
-  text-decoration: none
+  display: block; 
+  text-decoration: none 
 }
 
 .portfolio-img {
